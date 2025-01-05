@@ -27,7 +27,7 @@
 + [计算机网络知识点 - 基础版](https://github.com/Tjyy-1223/Super-Java-Book/blob/master/Java%20%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/8%20-%20%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%20-%20%E7%9F%A5%E8%AF%86%E7%82%B9.md)
 + [操作系统知识点 - 基础版](https://github.com/Tjyy-1223/Super-Java-Book/blob/master/Java%20%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/9%20-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%20-%20%E7%9F%A5%E8%AF%86%E7%82%B9.md)
 + [消息队列 - MQ 知识点](https://github.com/Tjyy-1223/Super-Java-Book/blob/master/Java%20%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/10%20-%20%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97MQ%20-%20%E7%9F%A5%E8%AF%86%E7%82%B9.md)
-+ [Leetcode - HOT 100 三天速通](https://github.com/Tjyy-1223/Super-Java-Book/blob/master/Java%20%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/11%20-%20HOT100%20-%20%E6%80%BB%E7%BB%93.md)
++ [Leetcode - HOT 100 三天速通 - JAVA版本](https://github.com/Tjyy-1223/Super-Java-Book/blob/master/Java%20%E7%9F%A5%E8%AF%86%E6%80%BB%E7%BB%93/11%20-%20HOT100%20-%20%E6%80%BB%E7%BB%93.md)
 
 
 
@@ -35,15 +35,21 @@
 
 + Mysql 进阶
 + Redis 进阶
-+ MQ 进阶
++ MQ/KAFKA 消息队列进阶
 + 计算机网络 - 进阶版
 + 操作系统 - 进阶版
 + 设计模式 - 总结篇
 + 缓存原理 - 总结篇
 + 高并发 - 总结篇
-+ 场景实践 - 总结篇 [持续更新]
 
 
+
+## 5 后端 - 框架与应用
+
++ 场景实践 - 博客总结篇 [持续更新]
++ 框架学习 - spring/springboot 系列
++ 框架学习 - gin 系列
++ 框架学习 - grpc 系列
 
 
 
