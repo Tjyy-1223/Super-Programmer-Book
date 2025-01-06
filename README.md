@@ -46,7 +46,8 @@
 
 ## 5 后端 - 框架与应用
 
-+ 场景实践 - 博客总结篇 [持续更新]
++ [场景实践 - 博客推荐 - 框架与中间件[持续更新]](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%A1%86%E6%9E%B6%E4%B8%8E%E5%BA%94%E7%94%A8/blog/%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%20-%20%E6%A1%86%E6%9E%B6%E4%B8%8E%E4%B8%AD%E9%97%B4%E4%BB%B6.md)
++ 场景实践 - 博客推荐 - 应用与架构[持续更新]
 + 框架学习 - spring/springboot 系列
 + 框架学习 - gin 系列
 + 框架学习 - grpc 系列
