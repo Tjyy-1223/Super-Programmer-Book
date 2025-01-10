@@ -1,6 +1,6 @@
 # Super-Java-Book
 
-**Java 知识点大杂烩 [学习路线] [八股总结] [源码分析] [知识拓展] [实践总结]**
+**JAVA\Golang 后端知识点大杂烩 [学习路线] [八股总结] [源码分析] [知识拓展] [实践总结]**
 
 推荐查看方式: git clone 到本地之后, 使用 Typora 打开后会出现 toc 目录和侧边目录, 格式整齐易懂
 
@@ -36,6 +36,9 @@
 + Mysql 进阶
 + Redis 进阶
 + MQ/KAFKA 消息队列进阶
+  + RabbitMQ实战指南 - 总结
+  + 深入理解Kafka：核心设计与实践原理 - 总结
+
 + 计算机网络 - 进阶版
 + 操作系统 - 进阶版
 + 设计模式 - 总结篇
@@ -46,8 +49,7 @@
 
 ## 5 后端 - 框架与应用
 
-+ [场景实践 - 博客推荐 - 框架与中间件[持续更新]](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%A1%86%E6%9E%B6%E4%B8%8E%E5%BA%94%E7%94%A8/blog/%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%20-%20%E6%A1%86%E6%9E%B6%E4%B8%8E%E4%B8%AD%E9%97%B4%E4%BB%B6.md)
-+ 场景实践 - 博客推荐 - 应用与架构[持续更新]
++ [场景实践 - 博客推荐[持续更新]](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%A1%86%E6%9E%B6%E4%B8%8E%E5%BA%94%E7%94%A8/blog/%E5%8D%9A%E5%AE%A2%E6%8E%A8%E8%8D%90%20-%20%E6%A1%86%E6%9E%B6%E4%B8%8E%E4%B8%AD%E9%97%B4%E4%BB%B6.md)
 + 框架学习 - spring/springboot 系列
 + 框架学习 - gin 系列
 + 框架学习 - grpc 系列
@@ -60,3 +62,4 @@
 2. [小林 coding](https://xiaolincoding.com/)
 3. 尚硅谷
 4. 黑马
+
