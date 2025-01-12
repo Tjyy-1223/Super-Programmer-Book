@@ -2,5 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/深入与进阶/3-MQ/&lt;RabbitMQ实战指南&gt;/RabbiyMQ-Demo" vcs="Git" />
   </component>
 </project>
