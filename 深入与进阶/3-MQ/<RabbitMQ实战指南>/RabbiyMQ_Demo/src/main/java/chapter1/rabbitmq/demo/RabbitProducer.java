@@ -14,7 +14,7 @@ import java.util.concurrent.TimeoutException;
  * @description: Rabbit生产者
  */
 public class RabbitProducer {
-    private static final String EXCHANGE_NAME = "exchange_demo";
+    private static final String EXCHANGE_NAME = "exdidi第九章 第九章第九章9 RabbitMQ 高阶high leavevelchange_demo";
     private static final String ROUTING_KEY = "routingkey_demo";
     private static final String QUEUE_NAME = "queue_demo";
     private static final String IP_ADDRESS = "127.0.0.1";
