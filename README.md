@@ -35,10 +35,16 @@
 
 + Mysql 进阶
 + Redis 进阶
-+ MQ/KAFKA 消息队列进阶
-  + RabbitMQ实战指南 - 总结
++ **MQ/KAFKA 消息队列进阶**
+  + [**RabbitMQ实战指南 - 总结**](https://github.com/Tjyy-1223/Super-Programmer-Book/tree/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E)
+    + [**RabbitMQ 入门 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/2%20RabbitMQ%20%E5%85%A5%E9%97%A8.md)
+    + [**客户端开发向导 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/3%20%E5%AE%A2%E6%88%B7%E7%AB%AF%E5%BC%80%E5%8F%91%E5%90%91%E5%AF%BC.md)
+    + [**RabbitMQ 进阶 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/4%20RabbitMQ%20%E8%BF%9B%E9%98%B6.md)
+    + [**跨越集群的界限 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/8%20%E8%B7%A8%E8%B6%8A%E9%9B%86%E7%BE%A4%E7%9A%84%E7%95%8C%E9%99%90.md)
+    + [**RabbitMQ 高阶 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/9%20RabbitMQ%20%E9%AB%98%E9%98%B6%EF%BC%88%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%EF%BC%89.md)
+    + [**网络分区 重要!!!**](https://github.com/Tjyy-1223/Super-Programmer-Book/blob/master/%E6%B7%B1%E5%85%A5%E4%B8%8E%E8%BF%9B%E9%98%B6/3-MQ/%3CRabbitMQ%E5%AE%9E%E6%88%98%E6%8C%87%E5%8D%97%3E/10%20%E7%BD%91%E7%BB%9C%E5%88%86%E5%8C%BA.md)
   + 深入理解Kafka：核心设计与实践原理 - 总结
-
+  
 + 计算机网络 - 进阶版
 + 操作系统 - 进阶版
 + 设计模式 - 总结篇
