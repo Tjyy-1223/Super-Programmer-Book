@@ -1,4 +1,4 @@
-# RPC / Thrift
+# RPC / gRPC 框架 / Thrift框架
 
 ## 1 RPC
 
@@ -1019,6 +1019,12 @@ jobs:
 首先来看没有将 thrift-idl 提取出的架构：
 
 <img src="./assets/image-20250517222045324.png" alt="image-20250517222045324" style="zoom:50%;" />
+
+Thrift 的底层传输协议和方式具有高度的可配置性，它不像 gRPC 固定使用 HTTP/2，而是支持多种 传输层（Transport） 和 协议层（Protocol） 的组合。
+
++ 常见的传输方式包括 `TTransport` 接口下的 TCP 套接字（如 TSocket）、内存缓冲（TMemoryBuffer），甚至支持非阻塞或 HTTP。
++ 协议层方面，Thrift 提供如 TBinaryProtocol（二进制协议）、TCompactProtocol（压缩二进制） 和 TJSONProtocol（JSON 格式） 等。
++ 这种模块化设计让 Thrift 能灵活适配不同场景和语言，但默认配置下通常是使用 **TCP 传输 + 二进制协议**，这保证了高效的数据通信。
 
 项目结构如下：
 
