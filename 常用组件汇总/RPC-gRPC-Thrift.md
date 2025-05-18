@@ -438,11 +438,82 @@ func main() {
 
 
 
+
+
 #### 2.5 运行 Run
 
 1. 启动服务端：go run server.go，服务端输出：gRPC server listening on :50051
 2. 启动客户端：go run client.go
 3. 客户端输出响应：Greeting: Hello, World
+
+
+
+#### 2.6 编码存根与解码存根
+
+在 gRPC 中，“**编码存根（encoding stub）**”和“**解码存根（decoding stub）**”并不是官方术语，但它们通常是在描述 **gRPC 的客户端和服务端在进行消息序列化和反序列化过程中的自动生成代码**。我们可以从 gRPC 的通信机制来解释它们的含义：
+
+一、gRPC 通信流程概览
+
+gRPC 基于 HTTP/2 和 Protocol Buffers，通信的基本流程：
+
+1. 客户端调用本地方法（其实是调用一个自动生成的存根函数）
+2. 该方法会将请求对象序列化成字节流（protobuf 编码）
+3. 通过 HTTP/2 发送给服务端
+4. 服务端收到数据后将字节流反序列化为请求对象（protobuf 解码）
+5. 执行对应的服务逻辑
+6. 将响应对象再次序列化，发送给客户端
+7. 客户端收到响应后再反序列化为响应对象
+
+**二、编码存根（encoding stub）**
+
+编码存根通常指的是客户端侧自动生成的 gRPC stub 中的逻辑，它负责：
+
+- 将请求对象编码成 protobuf 格式（序列化）
+- 通过网络发送出去
+- 对应的是客户端 stub 中的编码逻辑（通常由 `protoc-gen-go-grpc` 生成的 `.pb.go` 中的客户端接口和调用实现）
+
+**三、解码存根（decoding stub）**
+
+解码存根 通常指的是服务端侧自动生成的 gRPC stub，它负责：
+
+- 从网络接收到 protobuf 字节流
+- 将其解码为实际的请求对象（反序列化）
+- 调用你注册的服务方法（即你自己实现的 handler）
+- 对应的是服务端 stub 中的解码逻辑（同样由 `protoc-gen-go-grpc` 生成）
+
+四、对比举例
+
+比如你定义了如下 proto 文件：
+
+```go
+service Greeter {
+  rpc SayHello(HelloRequest) returns (HelloReply);
+}
+```
+
+生成的客户端 stub 调用：
+
+```go
+client := pb.NewGreeterClient(conn)
+res, err := client.SayHello(ctx, &pb.HelloRequest{Name: "Alice"})
+```
+
+- 这里的 `client.SayHello()` 就是“**编码存根**”的一部分 —— 它会把 `HelloRequest` 编码后通过 gRPC 发给服务端。
+
+服务端：
+
+```go
+func (s *greeterServer) SayHello(ctx context.Context, req *pb.HelloRequest) (*pb.HelloReply, error) {
+  // 解码后得到 req
+}
+```
+
+- 在执行 `SayHello()` 方法前，gRPC 内部自动完成了解码过程，即“**解码存根**”的作用。
+
+| 名称     | 所在端 | 作用                         | 本质                 |
+| -------- | ------ | ---------------------------- | -------------------- |
+| 编码存根 | 客户端 | 将请求结构体编码成字节流发送 | 自动生成的客户端代码 |
+| 解码存根 | 服务端 | 接收字节流并还原成结构体     | 自动生成的服务端代码 |
 
 
 
@@ -721,7 +792,6 @@ thrift-idl 项目结构如下：
 thrift-idl/                # 专门存放 .thrift 接口定义的仓库（或项目）
 ├── hello.thrift
 ├── gen-go/                # 编译后生成的 Go 文件
-├── gen-py/                # 编译后生成的 Python 文件
 └── Makefile               # 编译多语言代码的脚本
 ```
 
@@ -1015,6 +1085,10 @@ jobs:
 
 
 ## 5 Thrift 原理以及架构图（重要）
+
+RPC 调用示意图：
+
+<img src="./assets/image-20250518135137353.png" alt="image-20250518135137353" style="zoom: 50%;" />
 
 首先来看没有将 thrift-idl 提取出的架构：
 
