@@ -860,21 +860,11 @@ go 1.20
 require github.com/apache/thrift v0.17.0
 ```
 
-main.go
+thrift-server main.go
 
 ```go
 package main
-
-import (
-	"context"
-	"log"
-
-	// 引入根据 hello.thrift 自动生成的 Go 代码（HelloService 接口等）
-	"example.com/thrift-server/gen-go/hello"
-
-	// Apache Thrift 的 Go 实现库
-	"github.com/apache/thrift/lib/go/thrift"
-)
+...
 
 // HelloHandler 实现了 HelloService 接口中定义的服务方法
 type HelloHandler struct{}
@@ -932,21 +922,11 @@ go 1.20
 require github.com/apache/thrift v0.17.0
 ```
 
-`main.go`：
+thrift-client `main.go`：
 
 ```go
 package main
-
-import (
-	"context"
-	"log"
-
-	// 引入根据 hello.thrift 自动生成的客户端代码
-	"example.com/thrift-client/gen-go/hello"
-
-	// Apache Thrift 的 Go 实现库
-	"github.com/apache/thrift/lib/go/thrift"
-)
+...
 
 func main() {
 	// 创建一个 TCP Socket，连接到 Thrift 服务端（监听 localhost:9090）
